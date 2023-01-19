@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  <title>ShopStock tracker</title>
+  <style>
+   p{
+      font-family: "Comfortaa";
+   }
+   span{
+      font-family: "Comfortaa";
+   }
+     
+   body{
+      
+      background-image: url(./images/gfy.gif);
+      background-repeat: no-repeat;
+      background-size:auto 100%;
+      
+      min-height: 120vh;
+   }
+   .header{
+      min-height: 200px;
+   }
+   .footdiv {
+  position: fixed;
+  width: 100%;
+  min-height:50px ;
+  bottom: 0%;
+  left:0%;
+  background-color: rgba(62, 11, 109,1);
+  z-index: 0;
+   }
+   .iod{
+      font-size: 30px;
+      color:black;
+      font-weight:bold;
+      display: flex;
+  justify-content: center;
+      align-items: center;
+   }
+   a{
+      color:gray;
+   }
+   .bigmain{
+      min-height:200px;
+      position:static;
+      width:75%;
+      margin-left:11%;
+      
+   }
+   #demo{
+      min-height:100px;
+      position:static;
+      width:75%;
+      border: 5px solid black;
+      background-color: aliceblue;
+      display:none;
+      align-items: center;
+      margin-left: 11%;
+   }
+   #search{
+      font-size:40px;
+      border-radius:50px 50px 50px 50px;
+      border: 5px solid  rgba(62, 11, 109,1);
+      padding-left: 20px;
+      padding-right:40px;
+      position: static;
+      display: flex;
+  justify-content: center;
+      align-items: center;
+   }
+   .pq{
+      display: flex;
+  justify-content: center;
+      align-items: center;
+   }
+   .pqr{
+      display: flex;
+  justify-content: center;
+      align-items: center; 
+   }
+   #submit{
+      background-color: rgb(237, 232, 241);
+      color:rgb(128, 121, 121);
+      cursor: pointer;
+      border: 5px solid rgb(24, 4, 41);
+      padding:5px;
+      border-radius:100%;
+      position: static;
+      display: flex;
+  justify-content: center;
+      align-items: center;
+   }
+   #location{
+      background-color: rgb(237, 232, 241);
+      border-radius:50px 50px 50px 50px;
+      border: 5px solid  rgb(27, 6, 47);
+      font-size: 20px;
+      cursor:pointer;
+   }
+   #loca{
+      background-color: rgb(237, 232, 241);
+      border-radius:50px 50px 50px 50px;
+      border: 5px solid  rgb(27, 6, 47);
+      font-size: 20px;
+      margin-left: 2%;
+      cursor: pointer;
+   }
+   .links1{
+      position: absolute;
+      color:rgb(128, 121, 121);
+   }
+   .links1:link {
+  text-decoration: none rgb(128, 121, 121);;
+}
+.links1:hover {
+  text-decoration:underline rgb(128, 121, 121);
+}
+.de{
+   max-height: 10%;
+   padding:10px;
+   margin:0;
+   border:3px solid black;
+   overflow-x:hidden;
+}
+#demo0{
+   background-color: lightblue;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(94, 94, 94); 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(9, 9, 9); 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
+  </style>
+ </head>
+ <body>
+  <header class="header">
+   <div class="imagediv" onclick="window.location.reload();" style="cursor:pointer;">
+      <img src="./images/logo.png" style="height:auto;max-width:200px;" alt="logo">
+   </div><br>
+   <p class="iod">Ev parts on the go...</p>
+  </header>
+  <div class="bigmain">
+   <div class="pq">
+    <form class="form_">
+      <select name="evcars" id="search" required>
+      <option value="Battery">Battery</option>
+      <option value="Chassis">Chassis</option>
+      <option value="Tyres">Tyres</option>
+      <option value="Motor">Motor</option></select>
+      </form>
+      <button id="submit" onclick="func()">
+      <img src="./images/search.png" height="30px"width="30px"> 
+      </button></div><br>
+      <div class="pqr">
+      <button id="location" onclick="getPositionobject1('first')">Location
+      </button>
+      <button id="loca" onclick="window.location.reload()">Reload
+      </button></div>
+  </div>
+  <script src="values1.js" >
+   </script>
+   <br>
+  <div  id="demo">
+   <div id="demo0" class="de" style="border:2px solid black">
+      
+   </div>
+   <div id="demo1" class="de" style="border:2px solid black">
+   </div>
+   <div id="demo2" class="de" style="border:2px solid black">
+   </div>
+   <div id="demo3" class="de" style="border:2px solid black">
+   </div>
+   <div id="demo4" class="de" style="border:2px solid black">
+   </div>
+  </div>
+  <div>
+   <br><br><br><br><br>
+   </div>
+  <footer class="footdiv">
+   <a class="links1" href="contact.html" target="_self" style="right:290px;bottom:10px">Contact</a>
+   <a class="links1" href="terms.html" target="_self" style="right:150px;bottom:10px">Terms of Service</a>
+   <a class="links1" href="privacy.html" target="_self" style="right:30px;bottom:10px">Privacy Policy</a>
+   
+  </footer>
+ 
+ </body>
+</html>

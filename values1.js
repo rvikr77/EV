@@ -18,10 +18,10 @@ if (event.key === "Enter") {
 function getPositionobject1(objectid) {
 			if (navigator.geolocation) {
 				  var timeoutVal = 5*1000;
-				  navigator.geolocation.watchPosition(
+				  navigator.geolocation.getCurrentPosition(
 					function(position) {displayPosition(position, objectid)},
 					displayError,
-					{ enableHighAccuracy: true, timeout: timeoutVal, maximumAge: 0 }
+					{ frequency:5000, maximumAge: 0, timeout: 100, enableHighAccuracy:true }
 				  );
 		}}
 
@@ -156,7 +156,7 @@ shops.sort((ad, bd) => (ad.data.distance > bd.data.distance) ? 1 : ((bd.data.dis
         ` </p>`+
         `<img style='cursor:text;align:right;height:20px;width:20px'src='./images/arrow.png'><span> `
         +k.data.distance.toFixed(2)+" km from here</span><hr><p style='color:purple;'>"+x+" - "+machine+
-        `</p><a style='font-family:Comfortaa;'href='shop${w}.html' target='_self'>`
+        `</p><a style='font-family:Comfortaa;'href='shop${k.id}.html' target='_self'>`
         +"View all other products</a><br>";
         w++;
         }

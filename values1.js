@@ -17,7 +17,7 @@ if (event.key === "Enter") {
 //location retreiver
 function getPositionobject1(objectid) {
 			if (navigator.geolocation) {
-				  var timeoutVal = 10*1000*1000;
+				  var timeoutVal = 5*1000;
 				  navigator.geolocation.watchPosition(
 					function(position) {displayPosition(position, objectid)},
 					displayError,

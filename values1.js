@@ -100,4 +100,4 @@ shops.sort((ad, bd) => (ad.data.distance > bd.data.distance) ? 1 : ((bd.data.dis
       }
       
     }
-    //till here time complexity O(nlog(n))
+    //till here time complexity O(nlog(n)), assuming sort takes O(nlog(n)) as well

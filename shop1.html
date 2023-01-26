@@ -2,12 +2,13 @@
 <html>
   <body>
     hi
+    <div id="hi"></div>
   </body>
 </html>
 <script>
-for (const [key, value] of Object.entries(shops[machineKey])){
+for (const [key, value] of Object.entries(shops[0])){
     if(key=="latitudes"||key=="longitudes"||key==x||key=="distance"||key=="name")continue;
-     document.getElementById(`demo${w}`).innerHTML+="<br><span style='color:grey'>"+key+"</span> : "+value;
+     document.getElementById('hi').innerHTML+="<br><span style='color:grey'>"+key+"</span> : "+value;
    }
 </script>
 </html>

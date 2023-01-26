@@ -17,11 +17,11 @@ if (event.key === "Enter") {
 //location retreiver
 function getPositionobject1(objectid) {
 			if (navigator.geolocation) {
-				  var timeoutVal = 5*1000;
+				  var timeoutVal = 10*1000*1000;
 				  navigator.geolocation.getCurrentPosition(
 					function(position) {displayPosition(position, objectid)},
 					displayError,
-					{ frequency:5000, maximumAge: 0, timeout: 100, enableHighAccuracy:true }
+					{enableHighAccuracy:true, timeout: timeoutVal, maximumAge: 0 }
 				  );
 		}}
 

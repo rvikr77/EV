@@ -50,13 +50,13 @@ function getPositionobject1(objectid) {
 function func(){
   //get user text
       var x=document.getElementById("search").value;
-      //Database
+      
 //Check if location enabled
       if(!a)
        {alert('allow location to proceed,accept location and reload page');return;}
       document.getElementById("demo").style.display="block";
       
-      //Find distance
+      //Find distance using Haversine formula
     for(let ra of shops){
         lat1=parseFloat(a);
         lon1=parseFloat(b);

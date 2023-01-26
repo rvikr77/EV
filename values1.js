@@ -24,7 +24,6 @@ function getPositionobject1(objectid) {
 					{enableHighAccuracy:true, timeout: timeoutVal, maximumAge: 0 }
 				  );
 		}}
-
 //send location data to global variable
 		function displayPosition(position, objectid) {
 		  //alert(objectid + " ##  Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude);

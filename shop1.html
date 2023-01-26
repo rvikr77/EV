@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+     <title>ShopStock tracker</title>
+   <style>
+     h1,div{font-family:Comfortaa;}
+      </style>
+  </head>
   <body>
-    hi
+    <h1 id="name"></h1>
     <div id="hi"></div>
+    <!--Accessing database to get contents only-->
+    <script src="database.js"></script>
+    <script>
+    document.getElementById('name').innerHTML=shops[0].data.name;
+    for(const [key,value] of Object.entries(shops[0].data)){
+      if(key==='latitudes'||key==='longitudes'||key==='distance'||key==='name')continue;
+      document.getElementById('hi').innerHTML+=key+' : '+value+'<br>';
+    }
+   </script>
   </body>
-</html>
-<script>
-for (const [key, value] of Object.entries(shops[0])){
-    if(key=="latitudes"||key=="longitudes"||key==x||key=="distance"||key=="name")continue;
-     document.getElementById('hi').innerHTML+="<br><span style='color:grey'>"+key+"</span> : "+value;
-   }
-</script>
 </html>

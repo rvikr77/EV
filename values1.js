@@ -54,7 +54,11 @@ function func(){
       if(!a)
        {alert('allow location to proceed,accept location and reload page');return;}
       document.getElementById("demo").style.display="block";
-      
+      document.getElementById("demo0").innerHTML="";
+      document.getElementById("demo1").innerHTML="";
+      document.getElementById("demo2").innerHTML="";
+      document.getElementById("demo3").innerHTML="";
+      document.getElementById("demo4").innerHTML="";
       //Find distance using Haversine formula
     for(let ra of shops){
         lat1=parseFloat(a);
@@ -92,11 +96,9 @@ shops.sort((ad, bd) => (ad.data.distance > bd.data.distance) ? 1 : ((bd.data.dis
         +"View all other products</a><br>";
         w++;
         }
-        else{
-          document.getElementById(`demo${w}`).innerHTML
-          ="Oops try again !";
-        }
       }
-      
+      if(document.getElementById("demo0").innerHTML===''){
+        document.getElementById("demo0").innerHTML="Oops product not available / try again"
+      }
     }
     //till here time complexity O(nlog(n)), assuming sort takes O(nlog(n)) as well

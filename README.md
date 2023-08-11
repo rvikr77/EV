@@ -1,4 +1,6 @@
-# EV
-# This is just an experimental website, used for only demo purposes. Not for commercial use. This is a personal project under fair use guidelines.
+# EV parts
+The project aims to locate nearest available ev parts from the clients' location and displays the detils.
+# This is a prototype website, used for projects.
 # Only location is requested to user from website for succesfully running the website.
 # Website : url('https://rvikr77.github.io/EV/first1.html')
+

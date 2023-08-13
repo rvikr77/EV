@@ -1,9 +1,13 @@
-    <style>
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
         img{
             height:10%;
             width:10%;
         }
     </style>
+        </head>
 shops=[
     {id:0,data:{
       latitudes:13.007002761475542, 

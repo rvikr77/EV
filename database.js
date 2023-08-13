@@ -23,7 +23,7 @@ shops=[
       longitudes: 80.25200628707896,
       distance:0,
       "name":"Centre 3",
-      "Battery":"20(Car 2 hector), 10(Car 1 Model 2)\n5(other general cars)",
+      "Battery":"20(Car 2 model 1), 10(Car 1 Model 2)\n5(other general cars)",
       "Motor":"Example 1 Motor(2-100cc,5-750cc), Car 1 motors 7-350cc ",
       "Tyres":"10 small, 5medium, 7 large, Example3 tyres,\n5 medium Example2 Tyres",
       "Chassis":"5 gear shifts(Car 2 model 1), 2 body parts(Car 5 model 1)"

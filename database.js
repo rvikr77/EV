@@ -1,3 +1,9 @@
+    <style>
+        img{
+            height:10%;
+            width:10%;
+        }
+    </style>
 shops=[
     {id:0,data:{
       latitudes:13.007002761475542, 

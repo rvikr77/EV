@@ -13,6 +13,10 @@
       </style>
   </head>
   <body>
+    <header class="header">
+      <div class="imagediv" onclick="window.location.reload();" style="cursor:pointer;">
+         <img src="./images/logo.png" style="height:auto;max-width:200px;" alt="logo">
+      </div><br>
     <h1 id="name"></h1>
     <div id="hi"></div>
     <!--Accessing database to get contents only-->
@@ -24,5 +28,10 @@
       document.getElementById('hi').innerHTML+=key+' : '+value+'<br>';
     }
    </script>
+    <footer class="footdiv">
+      <a class="links1" href="terms.html" target="_self" style="right:150px;bottom:10px">Terms of Service</a>
+      <a class="links1" href="privacy.html" target="_self" style="right:30px;bottom:10px">Privacy Policy</a>
+      
+     </footer>
   </body>
 </html>

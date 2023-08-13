@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-<style>
-        img{
-            height:10%;
-            width:10%;
-        }
-    </style>
-        </head>
+
 shops=[
     {id:0,data:{
       latitudes:13.007002761475542, 
       longitudes: 80.2533483685362,
       distance:0,
       "name":"Centre 1",
-      "Battery" :"<img src ='./images/battery.jpeg'/> 20(Car 1 Model 1), 10(Car 2 Model 3)\n5(other general cars)",
-      "Motor" :"<img src ='./images/motor.jpg'/> Example 1 Motor(2-100cc,5-750cc), Car 1 motors 7-350cc ",
-      "Tyres" :"<img src ='./images/tyres.jpeg'/> 10 small, 5medium, 7 large, Example1 tyres,\n5 medium Example2 Tyres"
+      "Battery" :"<img src ='./images/battery.jpeg' style='height: 10%; width: 10%;'/> 20(Car 1 Model 1), 10(Car 2 Model 3)\n5(other general cars)",
+      "Motor" :"<img src ='./images/motor.jpg'style='height: 10%; width: 10%;'/> Example 1 Motor(2-100cc,5-750cc), Car 1 motors 7-350cc ",
+      "Tyres" :"<img src ='./images/tyres.jpeg'style='height: 10%; width: 10%;'/> 10 small, 5medium, 7 large, Example1 tyres,\n5 medium Example2 Tyres"
    }},
    {id:1, data:{
      latitudes:12.936973545461063,

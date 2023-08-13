@@ -5,14 +5,7 @@ p{
     font-family: "Comfortaa";
  }
    
- body{
-    
-    background-image: url(./images/gfy.gif);
-    background-repeat: no-repeat;
-    background-size:auto 100%;
-    
-    min-height: 120vh;
- }
+
  .header{
     min-height: 200px;
  }
